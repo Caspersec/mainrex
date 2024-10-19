@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nama domain yang akan dilakukan bypass dari Imunify
-DOMAIN="namadomainanda.com"
+DOMAIN="skena.co.id"
 
 # Fungsi untuk menonaktifkan Imunify360
 disable_imunify360() {

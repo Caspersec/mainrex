@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://formacao-em-psicanalise.com/sitemap.xml
